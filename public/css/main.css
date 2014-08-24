@@ -1,0 +1,12 @@
+body {
+  background: url("../images/crossword.png");
+  padding: 50px;
+}
+#profileRow div {
+  border-right: 2px dashed gray;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+#errormsg {
+  color: red;
+}

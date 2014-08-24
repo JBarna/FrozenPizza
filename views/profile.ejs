@@ -1,0 +1,43 @@
+
+<% include toplayout%>
+
+<div class="jumbotron">
+  <h1>Welcome <%= username %></h1>
+</div>
+
+
+<!--Sections: About me, interets, goals-->
+<div id="profileRow" class="row">
+    <div id="aboutme" class="col-md-4 col-sm-6">
+        <h2 class="text-center">About Me</h2>
+        <hr>
+        <p class="profileInfo"><%= aboutme %></p>
+        
+        <% if (showEdit) { %>
+            <button class="btn btn-default btn-xs pull-right edit">Edit</button>
+        <% } %>
+    </div>
+    
+    <div id="interests" class="col-md-4 col-sm-6">
+        <h2 class="text-center">Interests</h2>
+        <hr>
+        <p class="profileInfo"><%= interests %></p>
+        
+        <% if (showEdit) { %>
+            <button class="btn btn-default btn-xs pull-right edit">Edit</button>
+        <% } %>
+    </div>
+    
+    <div id="goals" class="col-md-4 col-sm-6">
+        <h2 class="text-center">Goals</h2>
+        <hr>
+        <p class="profileInfo"><%= goals %></p>
+                              
+        <% if (showEdit) { %>
+            <button class="btn btn-default btn-xs pull-right edit">Edit</button>
+        <% } %>
+    </div>
+
+</div>
+
+<% include bottomlayout %>
